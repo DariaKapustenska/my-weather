@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+	
+  <body>
+    <div class="container">
+      <h1> Current weather in <b id="city"> Kyiv </b> </h1>
+      <form class="search-form" id="search-form">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="Type a city.."
+              autofocus="on"
+              autocomplete="off"
+              id="city-input"
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm"
+            />
+          </div>
+        </div>
+      </form>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+          <input type="text" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio1">℃</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio2">℉</label>
+        </div>
+      <div class="data_containers">
+        <div class="row row-cols-auto">
+          <div class="main_info_container">
+            <div class="row row-cols-1">
+              <div class="col-4" style="width: 100%"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                <h2 class="title" id="temperature"> 18° ☀ </h2>
+                <br/>
+                <img src="src/img/city_panorama.png" alt="city_panorama">
+              </div>
+            </div>
+          </div>
+          <div class="additional_containers">
+            <div class="col-8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              <div class="today_info>">
+                <div class="row row-cols-2">
+                    <div class="ramka" id = "time" style="width: 45%">
+                    </div>
+                    <div class="ramka" style="width: 45%">
+                      Preciptiation: 0%
+                      <br />
+                      Humidity: 10%
+                      <br />
+                      Wind: 19 mph
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="week_info">
+              <div class="row row-cols-3">
+                <div class="ramka" style="width: 31%" >Mon ⛅
+                  <br/>
+                  <strong> 18° </strong>
+                  <br />
+                  Wind 1 km/h
+                  <br />
+                  Humidity 61 %
+                </div>
+                <div class="ramka" style="width: 31%">
+                  Tue ⛅
+                  <br/>
+                  <strong> 18° </strong>
+                  <br />
+                  Wind 1 km/h
+                  <br />
+                  Humidity 61 %</div>
+                <div class="ramka" style="width: 31%">
+                  Wed ⛅
+                  <br/>
+                  <strong> 18° </strong>
+                  <br />
+                  Wind 1 km/h
+                  <br />
+                  Humidity 61 %
+                </div>
+                <div class="ramka" style="width: 31%">
+                  Thu ⛅
+                  <br/>
+                  <strong> 18° </strong>
+                  <br />
+                  Wind 1 km/h
+                  <br />
+                  Humidity 61 %
+                </div>
+                <div class="ramka" style="width: 31%">
+                  Fri ⛅
+                  <br/>
+                  <strong> 18° </strong>
+                  <br />
+                  Wind 1 km/h
+                  <br />
+                  Humidity 61 %
+                </div>
+                <div class="ramka" style="width: 31%">
+                  Sat ⛅
+                  <br/>
+                  <strong> 18° </strong>
+                  <br />
+                  Wind 1 km/h
+                  <br />
+                  Humidity 61 %
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  	</div>
+			<script src="src/index.js"></script>
+		</div>
+	</body>
+</html>

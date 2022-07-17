@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+}
+
+.title {
+  font-size: 100px;
+}
+
+img {
+  width: 300px;
+}
+
+.container {
+  background-color: black;
+  color: white;
+}
+
+.main_info_container {
+  margin: 10px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgb(252, 209, 115) 0%,
+    rgb(241, 236, 102) 100%
+  );
+}
+
+.ramka {
+  border: 2px double;
+  padding: 0;
+  margin: 10px;
+}
+.additional_containers {
+  display: flex;
+  justify-content: center;
+}
